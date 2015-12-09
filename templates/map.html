@@ -53,6 +53,8 @@
     var heatmapLayer = new HeatmapOverlay(cfg);
 
     var map = new L.Map('map-canvas', {
+      center: new L.LatLng(39.8282, -98.5795),
+      zoom: 4,
       layers: [baseLayer, heatmapLayer]
     });
 
