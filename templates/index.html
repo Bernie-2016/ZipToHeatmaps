@@ -6,7 +6,7 @@
 
     <h1>Zips to Heat Maps</h1>
 
-    <p>Upload a fuck ton of zips and we will map them for you.</p>
+    <p>Upload a bunch of zips and we will map them for you.</p>
 
     <form action="/submit" method="POST">
         <textarea name="zips" rows="25" cols="40"></textarea><br />
@@ -14,6 +14,8 @@
         <label for="max_opacity">Max Opacity:</label><input type="text" name="max_opacity" value="0.8" /><br />
         <button type="submit">GO</button>
     </form>
+
+    <p>Malformed (four-digit) zips will be filled with leading zeroes. Duplicate zips will inform the "heat" of that lat/lng.</p>
 
 </body>
 </html>
